@@ -1,0 +1,12 @@
+.Custom__homepage{
+    background: linear-gradient(118.14deg, #DCB69A -2.18%, #F5EDE5 68.89%);
+}
+.hero-wrapper{
+    display: flex;
+}
+.hero__left{
+    width: 50%;
+}
+.hero__right{
+    width:50%;
+}
