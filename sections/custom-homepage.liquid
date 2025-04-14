@@ -1,0 +1,53 @@
+<section class="Custom__homepage">
+  <div class="container">
+    <div class="hero-wrapper">
+      <div class="hero__left">
+        <h2>{{ section.settings.heading }}</h2>
+        <p>{{ section.settings.text }}</p>
+        <a href="{{ section.settings.button }}" class="button">{{ section.settings.button_text }}</a>
+      </div>
+      <div class="hero__right">
+        {% if section.settings.image %}
+          <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.heading }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Custom-homepage",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Your Heading Here"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Add your description or text here."
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Button Text",
+      "default": "Click Me"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Custom-homepage",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
