@@ -52,6 +52,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/Oteria_Homepage.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
