@@ -1,12 +1,13 @@
 
 {{ 'custom-homepage.css' | asset_url | stylesheet_tag }}
 <section class="Custom__homepage">
+<div class="hero">
   <div class="container">
     <div class="hero-wrapper">
       <div class="hero__left">
-        <h2>{{ section.settings.heading }}</h2>
-        <p>{{ section.settings.text }}</p>
-        <a href="{{ section.settings.button }}" class="button">{{ section.settings.button_text }}</a>
+        <h2 class="hero__heading">{{ section.settings.heading }}</h2>
+        <p class="hero__text">{{ section.settings.text }}</p>
+        <a href="{{ section.settings.button }}" class="button">{{ section.settings.button }} →</a>
       </div>
       <div class="hero__right">
         {% if section.settings.image %}
@@ -14,6 +15,7 @@
         {% endif %}
       </div>
     </div>
+  </div>
   </div>
 </section>
 {% schema %}
