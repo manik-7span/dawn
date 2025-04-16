@@ -36,11 +36,20 @@
             "heading": "DERMATOLOGIST TESTED",
             "subheading": ""
           }
+        },
+        "icon_76Arcd": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_2.svg",
+            "heading": "PETA APPROVEDVEGAN",
+            "subheading": ""
+          }
         }
       },
       "block_order": [
         "icon_Wk4bJd",
-        "icon_AJYH4Q"
+        "icon_AJYH4Q",
+        "icon_76Arcd"
       ],
       "name": "Feature Icons",
       "settings": {}
