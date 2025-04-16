@@ -28,10 +28,19 @@
             "heading": "Dermatologist  Tested",
             "subheading": ""
           }
+        },
+        "icon_AJYH4Q": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_2.svg",
+            "heading": "DERMATOLOGIST TESTED",
+            "subheading": ""
+          }
         }
       },
       "block_order": [
-        "icon_Wk4bJd"
+        "icon_Wk4bJd",
+        "icon_AJYH4Q"
       ],
       "name": "Feature Icons",
       "settings": {}
