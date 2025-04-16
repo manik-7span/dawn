@@ -1,5 +1,7 @@
-<div class="features-section">
+{{ 'feature-section.css' | asset_url | stylesheet_tag }}
+<section class="feature"></section>
   <div class="container">
+  <div class="features-section">
     <div class="features-wrapper">
       {% for block in section.blocks %}
         <div class="feature-item">
@@ -15,37 +17,7 @@
     </div>
   </div>
 </div>
-
-<style>
-.features-section {
-  background-color: #f5ede5;
-  padding: 20px 0;
-  border-radius: 50px;
-}
-.features-wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.feature-item {
-  text-align: center;
-}
-.feature-item img {
-  max-width: 40px;
-  margin-bottom: 10px;
-}
-.feature-heading {
-  font-size: 14px;
-  font-weight: 600;
-  margin: 5px 0;
-}
-.feature-subheading {
-  font-size: 12px;
-  color: #7a7a7a;
-}
-</style>
+</section>
 {% schema %}
 {
   "name": "Feature Icons",
