@@ -18,6 +18,24 @@
         "image": "shopify://shop_images/Oteria_Homepage.png"
       }
     },
+    "feature_section_QxFeQh": {
+      "type": "feature-section",
+      "blocks": {
+        "icon_Wk4bJd": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_2.svg",
+            "heading": "Dermatologist  Tested",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_Wk4bJd"
+      ],
+      "name": "Feature Icons",
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -155,6 +173,7 @@
   },
   "order": [
     "custom_homepage_tVrbqX",
+    "feature_section_QxFeQh",
     "featured_collection",
     "collage",
     "video",
