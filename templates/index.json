@@ -18,6 +18,78 @@
         "image": "shopify://shop_images/Oteria_Homepage.png"
       }
     },
+    "feature_section_QxFeQh": {
+      "type": "feature-section",
+      "blocks": {
+        "icon_Wk4bJd": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_2.svg",
+            "heading": "DERMATOLOGIST TESTED",
+            "subheading": ""
+          }
+        },
+        "icon_AJYH4Q": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_2.svg",
+            "heading": "DERMATOLOGIST TESTED",
+            "subheading": ""
+          }
+        },
+        "icon_76Arcd": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_2.svg",
+            "heading": "PETA APPROVEDVEGAN",
+            "subheading": ""
+          }
+        },
+        "icon_kPhpMb": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_2.svg",
+            "heading": "ALL SKIN TYPES",
+            "subheading": ""
+          }
+        },
+        "icon_pgEwXd": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Group_457.svg",
+            "heading": "PARABEN FREE",
+            "subheading": ""
+          }
+        },
+        "icon_P86dKE": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Isolation_Mode.svg",
+            "heading": "PRESERVATIVE FREE",
+            "subheading": ""
+          }
+        },
+        "icon_JaHkfz": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Isolation_Mode.svg",
+            "heading": "PRESERVATIVE FREE",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_Wk4bJd",
+        "icon_AJYH4Q",
+        "icon_76Arcd",
+        "icon_kPhpMb",
+        "icon_pgEwXd",
+        "icon_P86dKE",
+        "icon_JaHkfz"
+      ],
+      "name": "Feature Icons",
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -43,6 +115,54 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_WNtwdj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qKbp9M": {
+          "type": "heading",
+          "settings": {
+            "heading": "Skin's Rhytm",
+            "heading_size": "h1"
+          }
+        },
+        "text_qgKefK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our skin has its own internal clock, known as the circadian rhythm. It influences various physiological processes, including cell turnover, hydration levels, and enhancing defense mechanisms against external stressors, including pollution and the harsh impact of UV rays.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_3rY4yr": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qKbp9M",
+        "text_qgKefK",
+        "button_3rY4yr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Group_635.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -155,7 +275,9 @@
   },
   "order": [
     "custom_homepage_tVrbqX",
+    "feature_section_QxFeQh",
     "featured_collection",
+    "image_with_text_WNtwdj",
     "collage",
     "video",
     "multicolumn"
