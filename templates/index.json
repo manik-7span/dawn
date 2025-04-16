@@ -68,6 +68,14 @@
             "heading": "PRESERVATIVE FREE",
             "subheading": ""
           }
+        },
+        "icon_JaHkfz": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Isolation_Mode.svg",
+            "heading": "PRESERVATIVE FREE",
+            "subheading": ""
+          }
         }
       },
       "block_order": [
@@ -76,7 +84,8 @@
         "icon_76Arcd",
         "icon_kPhpMb",
         "icon_pgEwXd",
-        "icon_P86dKE"
+        "icon_P86dKE",
+        "icon_JaHkfz"
       ],
       "name": "Feature Icons",
       "settings": {}
