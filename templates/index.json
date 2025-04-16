@@ -90,6 +90,13 @@
       "name": "Feature Icons",
       "settings": {}
     },
+    "image_with_head_Pd6GtB": {
+      "type": "image-with-head",
+      "name": "Background Heading",
+      "settings": {
+        "heading": "Your Heading Here"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -276,6 +283,7 @@
   "order": [
     "custom_homepage_tVrbqX",
     "feature_section_QxFeQh",
+    "image_with_head_Pd6GtB",
     "featured_collection",
     "image_with_text_WNtwdj",
     "collage",
