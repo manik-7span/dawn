@@ -44,12 +44,21 @@
             "heading": "PETA APPROVEDVEGAN",
             "subheading": ""
           }
+        },
+        "icon_kPhpMb": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_2.svg",
+            "heading": "ALL SKIN TYPES",
+            "subheading": ""
+          }
         }
       },
       "block_order": [
         "icon_Wk4bJd",
         "icon_AJYH4Q",
-        "icon_76Arcd"
+        "icon_76Arcd",
+        "icon_kPhpMb"
       ],
       "name": "Feature Icons",
       "settings": {}
