@@ -94,7 +94,8 @@
       "type": "image-with-head",
       "name": "Background Heading",
       "settings": {
-        "heading": "Your Heading Here"
+        "background_image": "shopify://shop_images/Group_639.png",
+        "heading": "This is where <br> Science meets nature"
       }
     },
     "featured_collection": {
