@@ -131,14 +131,14 @@
         "text_qgKefK": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Our skin has its own internal clock, known as the circadian rhythm. It influences various physiological processes, including cell turnover, hydration levels, and enhancing defense mechanisms against external stressors, including pollution and the harsh impact of UV rays.</p>",
             "text_style": "body"
           }
         },
         "button_3rY4yr": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
