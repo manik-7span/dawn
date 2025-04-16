@@ -60,6 +60,14 @@
             "heading": "PARABEN FREE",
             "subheading": ""
           }
+        },
+        "icon_P86dKE": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Isolation_Mode.svg",
+            "heading": "PRESERVATIVE FREE",
+            "subheading": ""
+          }
         }
       },
       "block_order": [
@@ -67,7 +75,8 @@
         "icon_AJYH4Q",
         "icon_76Arcd",
         "icon_kPhpMb",
-        "icon_pgEwXd"
+        "icon_pgEwXd",
+        "icon_P86dKE"
       ],
       "name": "Feature Icons",
       "settings": {}
