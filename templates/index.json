@@ -52,13 +52,22 @@
             "heading": "ALL SKIN TYPES",
             "subheading": ""
           }
+        },
+        "icon_pgEwXd": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/Group_457.svg",
+            "heading": "PARABEN FREE",
+            "subheading": ""
+          }
         }
       },
       "block_order": [
         "icon_Wk4bJd",
         "icon_AJYH4Q",
         "icon_76Arcd",
-        "icon_kPhpMb"
+        "icon_kPhpMb",
+        "icon_pgEwXd"
       ],
       "name": "Feature Icons",
       "settings": {}
