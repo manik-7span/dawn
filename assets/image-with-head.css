@@ -6,12 +6,14 @@
     padding-bottom: 50px;
 }
 .heading{
-    padding-top: 95px;
-    padding-bottom: 220px;
+    padding-top: 119px;
+    padding-bottom: 324px;
+    text-align: left;
+    display: flex;
+    justify-content: right;
     font-family: IvyPresto Display;
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 1px;
-    text-align: end;
 }

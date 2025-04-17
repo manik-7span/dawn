@@ -1,0 +1,119 @@
+<section class="oteria-footer">
+  <div class="footer-container">
+    <!-- Left Side: Newsletter -->
+    <div class="footer-newsletter">
+      <h2>{{ section.settings.newsletter_heading }}</h2>
+      <p>{{ section.settings.newsletter_description }}</p>
+      <form method="POST" action="/contact#footer">
+        <input type="email" name="email" placeholder="{{ section.settings.newsletter_placeholder }}" required>
+        <button type="submit">{{ section.settings.newsletter_button_text }}</button>
+      </form>
+    </div>
+
+    <!-- Right Side: Links -->
+    <div class="footer-links">
+      {% for block in section.blocks %}
+        <div class="footer-column">
+          <h4>{{ block.settings.column_title }}</h4>
+          <ul>
+            {% for link in block.settings.links %}
+              <li><a href="{{ link.link_url }}">{{ link.link_text }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Copyright and Social Icons -->
+  <div class="footer-bottom">
+    <p>{{ section.settings.copyright_text }}</p>
+    <div class="social-icons">
+      {% if section.settings.facebook_link %}
+        <a href="{{ section.settings.facebook_link }}" target="_blank">
+          <img src="{{ 'facebook-icon.svg' | asset_url }}" alt="Facebook">
+        </a>
+      {% endif %}
+      {% if section.settings.instagram_link %}
+        <a href="{{ section.settings.instagram_link }}" target="_blank">
+          <img src="{{ 'instagram-icon.svg' | asset_url }}" alt="Instagram">
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Footer Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "newsletter_heading",
+      "label": "Newsletter Heading",
+      "default": "Stay updated with Oteria"
+    },
+    {
+      "type": "textarea",
+      "id": "newsletter_description",
+      "label": "Newsletter Description",
+      "default": "Be the first to know about new product launches, exclusive offers, and skincare tips from our experts."
+    },
+    {
+      "type": "text",
+      "id": "newsletter_placeholder",
+      "label": "Newsletter Input Placeholder",
+      "default": "EMAIL ADDRESS"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_button_text",
+      "label": "Newsletter Button Text",
+      "default": "SUBMIT"
+    },
+    {
+      "type": "url",
+      "id": "facebook_link",
+      "label": "Facebook URL",
+      "default": "https://facebook.com"
+    },
+    {
+      "type": "url",
+      "id": "instagram_link",
+      "label": "Instagram URL",
+      "default": "https://instagram.com"
+    },
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "Copyright Text",
+      "default": "Copyright 2023 Oteria"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Footer Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "column_title",
+          "label": "Column Title",
+          "default": "Need Help?"
+        },
+        {
+          "type": "link_list",
+          "id": "links",
+          "label": "Menu Links"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer",
+      "category": "Footer"
+    }
+  ]
+}
+{% endschema %}

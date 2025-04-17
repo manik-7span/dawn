@@ -44,5 +44,7 @@
     font-size: 13px;
     line-height: 22px;
     margin-top: 20px;
+}
+.button::after{
     box-shadow:none!important;
 }
