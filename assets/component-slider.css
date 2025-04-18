@@ -6,7 +6,9 @@ slider-component {
   position: relative;
   display: block;
 }
-
+.slider-button {
+  display: none!important;
+}
 slider-component.slider-component-full-width {
   --desktop-margin-left-first-item: 1.5rem;
 }

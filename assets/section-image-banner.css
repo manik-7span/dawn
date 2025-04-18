@@ -5,7 +5,37 @@
   z-index: auto;
   isolation: isolate;
 }
-
+.button {
+  background-color: #FFFFFF!important;
+  border-radius: 50px;
+  color: #202020;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  margin-top: 20px;
+  border:none!important;
+}
+.button::after{
+  box-shadow:none!important;
+}
+.banner__heading {
+  margin-bottom: 0;
+  font-family: IvyPresto Display;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  padding-bottom: 38px;
+}
+.banner__box .banner__heading+* {
+  padding-bottom: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
 .banner__box {
   text-align: center;
 }

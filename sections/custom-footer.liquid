@@ -1,12 +1,13 @@
+{{ 'custom-footer.css' | asset_url | stylesheet_tag }}
 <section class="oteria-footer">
   <div class="footer-container">
     <!-- Left Side: Newsletter -->
     <div class="footer-newsletter">
-      <h2>{{ section.settings.newsletter_heading }}</h2>
-      <p>{{ section.settings.newsletter_description }}</p>
+      <h2>{{ section.settings.newsletterhead }}</h2>
+      <p>{{ section.settings.newsletter }}</p>
       <form method="POST" action="/contact#footer">
-        <input type="email" name="email" placeholder="{{ section.settings.newsletter_placeholder }}" required>
-        <button type="submit">{{ section.settings.newsletter_button_text }}</button>
+        <input type="email" name="email" placeholder="{{ section.settings.newsholder }}" required>
+        <button type="submit">{{ section.settings.newsbutton }}</button>
       </form>
     </div>
 
@@ -14,7 +15,7 @@
     <div class="footer-links">
       {% for block in section.blocks %}
         <div class="footer-column">
-          <h4>{{ block.settings.column_title }}</h4>
+          <h4>{{ block.settings.column }}</h4>
           <ul>
             {% for link in block.settings.links %}
               <li><a href="{{ link.link_url }}">{{ link.link_text }}</a></li>
@@ -27,15 +28,15 @@
 
   <!-- Copyright and Social Icons -->
   <div class="footer-bottom">
-    <p>{{ section.settings.copyright_text }}</p>
+    <p>{{ section.settings.copyright }}</p>
     <div class="social-icons">
       {% if section.settings.facebook_link %}
-        <a href="{{ section.settings.facebook_link }}" target="_blank">
+        <a href="{{ section.settings.facebook }}" target="_blank">
           <img src="{{ 'facebook-icon.svg' | asset_url }}" alt="Facebook">
         </a>
       {% endif %}
       {% if section.settings.instagram_link %}
-        <a href="{{ section.settings.instagram_link }}" target="_blank">
+        <a href="{{ section.settings.instagram }}" target="_blank">
           <img src="{{ 'instagram-icon.svg' | asset_url }}" alt="Instagram">
         </a>
       {% endif %}
@@ -49,43 +50,43 @@
   "settings": [
     {
       "type": "text",
-      "id": "newsletter_heading",
+      "id": "newsletterhead",
       "label": "Newsletter Heading",
       "default": "Stay updated with Oteria"
     },
     {
       "type": "textarea",
-      "id": "newsletter_description",
+      "id": "newsletter",
       "label": "Newsletter Description",
       "default": "Be the first to know about new product launches, exclusive offers, and skincare tips from our experts."
     },
     {
       "type": "text",
-      "id": "newsletter_placeholder",
+      "id": "newsholder",
       "label": "Newsletter Input Placeholder",
       "default": "EMAIL ADDRESS"
     },
     {
       "type": "text",
-      "id": "newsletter_button_text",
+      "id": "newsbutton",
       "label": "Newsletter Button Text",
       "default": "SUBMIT"
     },
     {
       "type": "url",
-      "id": "facebook_link",
+      "id": "facebook",
       "label": "Facebook URL",
-      "default": "https://facebook.com"
+    
     },
     {
       "type": "url",
-      "id": "instagram_link",
+      "id": "instagram",
       "label": "Instagram URL",
-      "default": "https://instagram.com"
+      
     },
     {
       "type": "text",
-      "id": "copyright_text",
+      "id": "copyright",
       "label": "Copyright Text",
       "default": "Copyright 2023 Oteria"
     }
@@ -97,7 +98,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "column_title",
+          "id": "column",
           "label": "Column Title",
           "default": "Need Help?"
         },
@@ -117,3 +118,4 @@
   ]
 }
 {% endschema %}
+

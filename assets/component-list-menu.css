@@ -1,7 +1,11 @@
 .list-menu--right {
   right: 0;
 }
-
+.list-menu__item{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+}
 .list-menu--disclosure {
   position: absolute;
   min-width: 100%;
@@ -14,7 +18,7 @@
 }
 
 .list-menu__item--active {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   text-underline-offset: 0.3rem;
 }
 
