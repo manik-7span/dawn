@@ -9,15 +9,6 @@
  */
 {
   "sections": {
-    "custom_homepage_tVrbqX": {
-      "type": "custom-homepage",
-      "settings": {
-        "heading": "This is where Science meets nature",
-        "text": "At Oteria, we promise realistic outcomes by harnessing the skin's natural cycle of healing and restoration. Our products are formulated with natural actives, carefully selected and backed by science.",
-        "button": "KNOW MORE →",
-        "image": "shopify://shop_images/Oteria_Homepage.png"
-      }
-    },
     "slideshow_RXmiGR": {
       "type": "slideshow",
       "blocks": {
@@ -228,7 +219,6 @@
     }
   },
   "order": [
-    "custom_homepage_tVrbqX",
     "slideshow_RXmiGR",
     "feature_section_QxFeQh",
     "image_with_head_Pd6GtB",

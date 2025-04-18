@@ -211,7 +211,7 @@
           "text": "#121212",
           "button": "#ffffff",
           "button_label": "#ffffff",
-          "secondary_button_label": "#ffffff",
+          "secondary_button_label": "rgba(0,0,0,0)",
           "shadow": "rgba(0,0,0,0)"
         }
       }
