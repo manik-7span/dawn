@@ -9,7 +9,13 @@
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
-
+.footer-block__heading inline-richtext{
+  font-family: IvyPresto Display;
+font-weight: 400;
+font-size: 60px;
+line-height: 70px;
+letter-spacing: 2px;
+}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
