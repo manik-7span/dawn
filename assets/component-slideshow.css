@@ -21,11 +21,36 @@ slideshow-component .slideshow.banner {
   flex-direction: column;
   visibility: visible;
 }
-
+@media screen and (max-width:1024px) {
+  .banner__heading {
+    font-size: 48px;
+    max-width: 365px;
+  }
+.banner__box .banner__heading+* {
+    max-width: 337px;
+}
+}
+@media screen and (max-width:989px){
+  .banner__heading {
+    font-size: 39px;
+  }
+}
+@media screen and (max-width:767px){
+  .banner__heading {
+    font-size: 37px;
+    max-width: 352px!important;
+  }
+}
 @media screen and (max-width: 749px) {
   .slideshow--placeholder.banner--mobile-bottom.banner--adapt_image .slideshow__media,
   .slideshow--placeholder.banner--adapt_image:not(.banner--mobile-bottom) {
     height: 28rem;
+  }
+    .banner__heading{
+      max-width:100%!important;
+    }
+    .banner__box .banner__heading+* {
+      max-width: 100%;
   }
 }
 

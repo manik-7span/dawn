@@ -13,6 +13,23 @@
 .footer-block grid__item{
   margin-left:270px;
 }
+   .footer-block:first-child h2 {
+  margin-bottom: 2rem;
+  margin-top: 0;
+  font-family: IvyPresto Display;
+font-weight: 400;
+font-size: 60px!important;
+line-height: 70px;
+letter-spacing: 2px;
+ /* font-size: calc(var(--font-heading-scale) * 1.6rem);*/
+}
+.footer-block__details-content{
+  color: #D6D6D6;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
@@ -151,11 +168,7 @@
   }
 }
 
-.footer-block__heading {
-  margin-bottom: 2rem;
-  margin-top: 0;
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
-}
+
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {

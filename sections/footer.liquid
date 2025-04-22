@@ -197,11 +197,11 @@ letter-spacing: 2px;
                       {% elsif form.posted_successfully? %}
                         aria-describedby="ContactFooter-success"
                       {% endif %}
-                      placeholder="{{ 'newsletter.label' | t }}"
+                      placeholder= "EMAIL ADDRESS"
                       required
                     >
                     <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                      {{ 'newsletter.label' | t }}
+                      EMAIL ADDRESS
                     </label>
                     <button
                       type="submit"
@@ -209,7 +209,7 @@ letter-spacing: 2px;
                       name="commit"
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
-                    >
+                    >SUBMIT
                       <span class="svg-wrapper">
                         {{- 'icon-arrow.svg' | inline_asset_content -}}
                       </span>
