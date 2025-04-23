@@ -2,9 +2,13 @@
   right: 0;
 }
 .list-menu__item{
-      font-weight: 400;
-      font-size: 16px;
       line-height: 100%;
+      font-weight: 400;
+      font-size: 16px!important;
+      line-height: 17px;
+      letter-spacing: 0px;
+      color: #D6D6D6;
+      padding-bottom: 14px;
 }
 .list-menu--disclosure {
   position: absolute;
