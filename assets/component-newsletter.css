@@ -9,6 +9,7 @@
 .newsletter-form__field-wrapper .field__input{
   background-color: #FFFFFF;
   border-radius: 40px;
+  padding-right: 56rem;
 }
 .field__label{
   color: #333;
@@ -32,7 +33,7 @@
 }
 
 .newsletter-form__field-wrapper .field__input {
-  padding-right: 5rem;
+  padding-right: 56rem;
 }
 
 .newsletter-form__field-wrapper .field::after {
@@ -63,6 +64,7 @@
   top: 0;
   height: 100%;
   z-index: 2;
+  left:132%;
 }
 
 .newsletter-form__button:focus-visible {
