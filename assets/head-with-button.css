@@ -1,0 +1,55 @@
+.shop-by-concern{
+    padding-top: 99px;
+    padding-bottom: 172px;
+}
+.shop__text{
+    font-family: Termina;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 62px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.shop__heading{
+    text-align: center;
+    padding-bottom: 45px;
+    font-family: IvyPresto Display;
+font-weight: 400;
+font-size: 40px;
+line-height: 62px;
+letter-spacing: 1px;
+text-align: center;
+
+}
+.concern{
+    display: flex;
+    justify-content: center;
+}
+.concern-buttons{
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    justify-content: center;
+}
+.concern-button{
+    padding: 9px 29px;
+    background-color: #fff;
+    border-radius: 60px;
+    border: 1px solid #202020;
+    font-weight: 400;
+    font-size: 20px;
+}
+@media screen and (max-width: 767px){
+    .shop__heading{
+        font-size: 35px;
+    }
+    .shop__text{
+        line-height: 30px;
+    }
+    .shop-by-concern{
+        padding-top: 65px;
+        padding-bottom: 84px;
+    }
+}
+    

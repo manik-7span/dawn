@@ -216,6 +216,74 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "head_with_button_qgDVtK": {
+      "type": "head-with-button",
+      "blocks": {
+        "button_Lq6aiG": {
+          "type": "button",
+          "settings": {
+            "button_text": "Acne",
+            "button_url": "shopify://products/child-shirt"
+          }
+        },
+        "button_Q9P746": {
+          "type": "button",
+          "settings": {
+            "button_text": "Pimentation",
+            "button_url": "shopify://products/dress"
+          }
+        },
+        "button_3G3Udx": {
+          "type": "button",
+          "settings": {
+            "button_text": "Ageing",
+            "button_url": "shopify://products/fuark-tshirt"
+          }
+        },
+        "button_j47Fmk": {
+          "type": "button",
+          "settings": {
+            "button_text": "Dryness",
+            "button_url": "shopify://products/gym-shorts"
+          }
+        },
+        "button_eCFyTp": {
+          "type": "button",
+          "settings": {
+            "button_text": "Pores",
+            "button_url": "shopify://products/polo-tshirt"
+          }
+        },
+        "button_3xyzYw": {
+          "type": "button",
+          "settings": {
+            "button_text": "Dry circles",
+            "button_url": "shopify://products/joggers-1"
+          }
+        },
+        "button_WrGRUE": {
+          "type": "button",
+          "settings": {
+            "button_text": "Uneven Texture",
+            "button_url": "shopify://products/kids-tshirt"
+          }
+        }
+      },
+      "block_order": [
+        "button_Lq6aiG",
+        "button_Q9P746",
+        "button_3G3Udx",
+        "button_j47Fmk",
+        "button_eCFyTp",
+        "button_3xyzYw",
+        "button_WrGRUE"
+      ],
+      "name": "Shop by Concern",
+      "settings": {
+        "text": "Got a Concern?",
+        "heading": "Shop by Concern"
+      }
     }
   },
   "order": [
@@ -223,6 +291,7 @@
     "feature_section_QxFeQh",
     "image_with_head_Pd6GtB",
     "featured_collection",
-    "image_with_text_WNtwdj"
+    "image_with_text_WNtwdj",
+    "head_with_button_qgDVtK"
   ]
 }

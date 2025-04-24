@@ -11,7 +11,10 @@
   display: block;
   position: relative;
 }
-.footer__content-top:after {
+.footer{
+  position: relative;
+}
+.footer:after {
   content: "";
   background-image: url(/cdn/shop/files/Group_328.svg?v=1745408492);
   background-size: contain;
@@ -20,8 +23,8 @@
   position: absolute;
   width: 285px;
   height: 375px;
-  bottom: -18%;
-  left: 105%;
+  bottom: 0;
+  right: 0;
 }
 
 .footer-block .grid__item{
@@ -71,6 +74,34 @@ letter-spacing: 2px;
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 0px;
+}
+@media screen and (max-width:1148px){
+  .footer__blocks-wrapper {
+    gap: 130px !important;
+}
+.footer-block:first-child h2{
+  font-size: 55px !important;
+}
+}
+@media screen and (max-width:1024px){
+  .footer-block:first-child h2{
+    font-size: 33px !important;
+    line-height: 47px;
+  }
+      .footer__blocks-wrapper {
+        gap: 110px !important;
+    }
+}  
+@media screen and (max-width:767px) {
+  .footer__blocks-wrapper .footer-block:first-child {
+    max-width: 100%;
+}
+.footer__blocks-wrapper .footer-block:nth-child(2) {
+  max-width: 100%;
+}
+.footer__blocks-wrapper .footer-block:nth-child(3) {
+  max-width: 100%;
+}
 }
 @media screen and (max-width: 749px) {
   .footer .grid {
