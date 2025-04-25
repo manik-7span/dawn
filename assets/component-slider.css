@@ -6,13 +6,22 @@ slider-component {
   position: relative;
   display: block;
 }
+
 .slider-button {
   display: none!important;
 }
 slider-component.slider-component-full-width {
   --desktop-margin-left-first-item: 1.5rem;
 }
-
+.slider--desktop .slider__slide:first-child{
+  margin-left: 206px;
+}
+.slider--desktop .slider__slide:nth-child(4){
+  margin-right: 206px;
+}
+.slider{
+  gap: 25px;
+}
 @media screen and (max-width: 749px) {
   slider-component.page-width {
     padding: 0 1.5rem;
@@ -165,7 +174,7 @@ slider-component.slider-component-full-width {
   }
 
   .slider--desktop .slider__slide:first-child {
-    margin-left: var(--desktop-margin-left-first-item);
+   /* margin-left: var(--desktop-margin-left-first-item);*/
     scroll-margin-left: var(--desktop-margin-left-first-item);
   }
 

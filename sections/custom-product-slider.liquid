@@ -1,0 +1,57 @@
+<section class="bestsellers-carousel">
+  <div class="container">
+    <h2 class="heading">{{ section.settings.heading }}</h2>
+    <div class="carousel">
+      {% for block in section.blocks %}
+        {% assign product = block.settings.product %}
+        {% if product %}
+          <div class="carousel-item">
+            <a href="{{ product.url }}">
+              <img src="{{ product.featured_image | img_url: '500x' }}" alt="{{ product.title }}">
+            </a>
+            <h3>{{ product.title }}</h3>
+             <p>{{ product.variants.first.weight }} {{ product.variants.first.weight_unit }}</p>
+            <p class="price">{{ product.price | money }}</p>
+            <form method="post" action="/cart/add">
+  <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+  <button type="submit">Add to Bag +</button>
+</form>
+
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{%schema%}
+{
+  "name": "Bestsellers Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Love your skin with our bestsellers"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bestsellers Carousel",
+      "category": "Home"
+    }
+  ]
+}
+{%endschema%}

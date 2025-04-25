@@ -160,14 +160,19 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+             <div class="product-description">
+  {{ card_product.description}}
+</div>
           <div class="card-information">
+  {{ card_product.variants.first.weight }} {{ card_product.variants.first.weight_unit }}
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
+              <span class="caption-large light">{{ block.settings.description | escape }}</span>
             {%- endif -%}
 
-            <span class="caption-large light">{{ block.settings.description | escape }}</span>
-
+            
+ 
             {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
               {% liquid
                 assign rating_decimal = 0
@@ -203,7 +208,6 @@
                 </span>
               </p>
             {%- endif -%}
-
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants_count == 1 and quick_add == 'bulk' %}
@@ -259,6 +263,7 @@
                   >
                     {{- 'icon-close.svg' | inline_asset_content -}}
                   </button>
+                  
                   {%- if card_product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
                     <volume-pricing class="parent-display">
                       <ul class="list-unstyled">
@@ -267,6 +272,7 @@
                           {%- assign price = card_product.selected_or_first_available_variant.price
                             | money_with_currency
                           -%}
+                          
                           <span>{{ 'sections.quick_order_list.each' | t: money: price }}</span>
                         </li>
                         {%- for price_break in card_product.selected_or_first_available_variant.quantity_price_breaks -%}
@@ -369,7 +375,7 @@
                   >
                     <span>
                       {%- if card_product.selected_or_first_available_variant.available -%}
-                        {{ 'products.product.add_to_cart' | t }}
+                        Add to Bag +
                       {%- else -%}
                         {{ 'products.product.sold_out' | t }}
                       {%- endif -%}
