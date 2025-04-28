@@ -164,7 +164,9 @@
   {{ card_product.description}}
 </div>
           <div class="card-information">
+          <div class="card-weight">
   {{ card_product.variants.first.weight }} {{ card_product.variants.first.weight_unit }}
+  </div>
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>

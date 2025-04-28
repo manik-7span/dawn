@@ -6,7 +6,35 @@ slider-component {
   position: relative;
   display: block;
 }
+.title  {
+  font-family: IvyPresto Display;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 62px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #202020;
+  padding-bottom: 46px;
+}
+.custom__slider-button{
+  background-color: transparent;
+  border: none;
+}
+.slider-buttons .svg-wrapper{
+  height: 100%;
+  width: 100%;
+}
 
+ .slider-button--prev{
+  position: absolute;
+  top: 24%;
+  left: 5%;
+}
+.slider-button--next{
+  position: absolute;
+  top: 24%;
+  right: 5%;
+}
 .slider-button {
   display: none!important;
 }
@@ -253,7 +281,7 @@ slider-component.slider-component-full-width {
 }
 
 .slider-counter {
-  display: flex;
+  display: none;
   justify-content: center;
   min-width: 4.4rem;
 }

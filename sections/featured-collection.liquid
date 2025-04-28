@@ -167,13 +167,13 @@
         <div class="slider-buttons">
           <button
             type="button"
-            class="slider-button slider-button--prev"
+            class="custom__slider-button slider-button--prev"
             name="previous"
             aria-label="{{ 'general.slider.previous_slide' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
             <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
+              {{- 'custom-icon-prev.svg' | inline_asset_content -}}
             </span>
           </button>
           <div class="slider-counter caption">
@@ -184,13 +184,13 @@
           </div>
           <button
             type="button"
-            class="slider-button slider-button--next"
+            class="custom__slider-button slider-button--next"
             name="next"
             aria-label="{{ 'general.slider.next_slide' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
             <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
+              {{- 'custom-icon-next.svg' | inline_asset_content -}}
             </span>
           </button>
         </div>

@@ -6,7 +6,6 @@
   isolation: isolate;
 }
 .button {
-  background-color: #FFFFFF!important;
   border-radius: 50px;
   color: #202020;
   font-weight: 600;
