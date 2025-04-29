@@ -189,6 +189,46 @@
         "padding_bottom": 36
       }
     },
+    "feature_feedback_VKcEtY": {
+      "type": "feature-feedback",
+      "blocks": {
+        "content_block_CfitkJ": {
+          "type": "content_block",
+          "settings": {
+            "icon": "shopify://shop_images/Vector.png",
+            "title": "Appropriate Timing",
+            "description": "Addresses specific skin concerns at the right time & enhances effectiveness of products"
+          }
+        },
+        "content_block_aVRCGf": {
+          "type": "content_block",
+          "settings": {
+            "icon": "shopify://shop_images/Sign.svg",
+            "title": "In Sync with Natural Processes",
+            "description": "Allows you to synchronize your skincare routine with skin’s natural processes"
+          }
+        },
+        "content_block_3xdF36": {
+          "type": "content_block",
+          "settings": {
+            "icon": "shopify://shop_images/drop.svg",
+            "title": "Product Effectiveness",
+            "description": "Determines the appropriate timing of exfoliation and hydration, and helps achieve longer-lasting results"
+          }
+        }
+      },
+      "block_order": [
+        "content_block_CfitkJ",
+        "content_block_aVRCGf",
+        "content_block_3xdF36"
+      ],
+      "name": "Feature and Feedback",
+      "settings": {
+        "heading": "Why Follow",
+        "subheading": "Skin’s Rhythm?",
+        "background_image": "shopify://shop_images/testimonial.png"
+      }
+    },
     "head_with_button_qgDVtK": {
       "type": "head-with-button",
       "blocks": {
@@ -280,10 +320,90 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "text_image_VmtdzY": {
+      "type": "text-image",
+      "blocks": {
+        "image_RtKMUU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_143.png"
+          }
+        },
+        "image_V6gAk7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_171.png"
+          }
+        },
+        "image_HWHme3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_172.png"
+          }
+        },
+        "image_EGigq7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_173.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_RtKMUU",
+        "image_V6gAk7",
+        "image_HWHme3",
+        "image_EGigq7"
+      ],
+      "name": "Text and Images",
+      "settings": {
+        "sub_text": "Want to explore?",
+        "main_text": "Watch & Shop"
+      }
+    },
+    "text_image_G6FC4B": {
+      "type": "text-image",
+      "blocks": {
+        "image_Vb6kdN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_142.png"
+          }
+        },
+        "image_in6CUw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_142.png"
+          }
+        },
+        "image_6dJ3nk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_142.png"
+          }
+        },
+        "image_PRYyCH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_142.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_Vb6kdN",
+        "image_in6CUw",
+        "image_6dJ3nk",
+        "image_PRYyCH"
+      ],
+      "name": "Text and Images",
+      "settings": {
+        "sub_text": "@oteria",
+        "main_text": "Get Inspired"
       }
     }
   },
@@ -292,7 +412,10 @@
     "feature_section_QxFeQh",
     "image_with_head_Pd6GtB",
     "image_with_text_WNtwdj",
+    "feature_feedback_VKcEtY",
     "head_with_button_qgDVtK",
-    "featured_collection_34cmWQ"
+    "featured_collection_34cmWQ",
+    "text_image_VmtdzY",
+    "text_image_G6FC4B"
   ]
 }

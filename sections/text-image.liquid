@@ -1,0 +1,57 @@
+{{ 'text-image.css' | asset_url | stylesheet_tag }}
+<div class="custom__text-images">
+  <div class="container">
+  <div class="custom__image-info">
+   <p class="custom__image-text">{{ section.settings.sub_text }}</p>
+    <h2 class="custom__image-heading">{{ section.settings.main_text }}</h2>
+    </div>
+  <div class="image-grid">
+    {% for block in section.blocks %}
+      {% if block.type == "image" %}
+        <div class="image-item">
+          <img src="{{ block.settings.image | image_url }}" alt="Image">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</div>
+{% schema %}
+{
+  "name": "Text and Image Grid",
+  "settings": [
+      {
+      "type": "text",
+      "id": "sub_text",
+      "label": "Subtext",
+      "default": "Add your subtext here"
+    },
+    {
+      "type": "text",
+      "id": "main_text",
+      "label": "Main Text",
+      "default": "Add your main text here"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text and Images",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+

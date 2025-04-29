@@ -1,0 +1,45 @@
+  .custom__text-images {
+    padding-top: 56px;
+    padding-bottom:109px;
+    background-color:#F4EDE9;
+  }
+  .custom__image-info{
+    padding-bottom:34px;
+    text-align:center;
+  }
+  .custom__image-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 62px;
+    letter-spacing: 1px;
+    color:#202020;
+  }
+  .custom__image-heading{
+    font-family: IvyPresto Display;
+    font-weight: 400;
+   font-size: 40px;
+   line-height: 62px;
+   letter-spacing: 1px;
+   color: #202020;
+  }
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  } 
+  @media screen and (max-width:1067px){
+   .image-item{
+    flex: 1 1 calc(50% - 16px);
+    text-align: center;
+   }
+  }
+   @media screen and (max-width:590px){
+   .image-item{
+    width:100%;
+    text-align: center;
+   }
+   .image-grid{
+    flex-direction:column;
+   }
+  }

@@ -1,7 +1,9 @@
 .footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
-
+.footer{
+  margin-top: 0px! important;
+}
 .footer:not(.color-scheme-1) {
   border-top: none;
 }
@@ -102,6 +104,10 @@ letter-spacing: 2px;
 .footer__blocks-wrapper .footer-block:nth-child(3) {
   max-width: 100%;
 }
+.footer:after {
+  width: 200px;
+  height: 579px;
+}
 }
 @media screen and (max-width: 749px) {
   .footer .grid {
@@ -142,7 +148,8 @@ letter-spacing: 2px;
 }
 
 .footer__content-bottom-wrapper {
-  display: flex;
+ /* display: flex;*/
+ display: none;
   width: 100%;
 }
 
@@ -165,6 +172,7 @@ letter-spacing: 2px;
     animation: none;
     opacity: 1;
     transform: inherit;
+    display: none;
   }
 }
 

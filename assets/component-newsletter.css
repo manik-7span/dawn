@@ -113,3 +113,23 @@
 .newsletter-form__button .icon {
   width: 1.5rem;
 }
+@media screen and (max-width:409px){
+  .newsletter-form__button {
+    left: 68%;
+}
+}
+@media screen and (max-width:380px){
+  .newsletter-form__button {
+    left: 65%;
+}
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  padding-bottom: 30px;
+}
+}
+@media screen and (max-width:350px){
+  .newsletter-form__button {
+    left: 61%;
+}
+}

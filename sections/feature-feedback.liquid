@@ -1,0 +1,140 @@
+<section class="feature__section" style="background-image: url('{{ section.settings.background_image | image_url }}'); background-repeat: no-repeat;
+    background-size: cover;">
+  <div class="container">
+    <div class="text-content">
+    <div class="text__info">
+      <h2>{{ section.settings.heading }}</h2>
+      <h3>{{ section.settings.subheading }}</h3>
+      </div>
+      <div class="icon-grid">
+      {% for block in section.blocks %}
+        <div class="icon-item">
+          <img src="{{ block.settings.icon | image_url }}" alt="Icon">
+          <h4>{{ block.settings.title }}</h4>
+          <p>{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    </div>
+    
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Feature and Feedback",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Follow"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Skin’s Rhythm?"
+    },
+      {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content_block",
+      "name": "Content Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "write something"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Write here"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature and Feedback",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .feature__section{
+    padding: 40px;
+  }
+  .text-content{
+    display:flex;
+  }
+  .text__info h2{
+    font-family: Inter;
+    font-weight: 700;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 2px;
+     color:#202020;
+     padding-bottom:28px;
+  }
+  .text__info h3{
+    font-family: IvyPresto Display;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 2px;
+    color:#202020;
+  }
+  .feature__section.text-content h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .feature__section .icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .feature__section.icon-item {
+    width: calc(25% - 20px);
+    max-width: 250px;
+    text-align: center;
+  }
+  .feature__section .icon-item img {
+    max-width: 50px;
+    margin-bottom: 15px;
+  }
+  .feature__section .icon-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .feature__section .icon-item p {
+    font-size: 14px;
+    color: #666;
+  }
+  @media (max-width: 768px) {
+    .feature__section .icon-item {
+      width: calc(50% - 20px);
+    }
+  }
+  @media (max-width: 480px) {
+    .feature__section.icon-item {
+      width: 100%;
+    }
+  }
+</style>
