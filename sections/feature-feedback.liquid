@@ -1,5 +1,5 @@
-<section class="feature__section" style="background-image: url('{{ section.settings.background_image | image_url }}'); background-repeat: no-repeat;
-    background-size: cover;">
+<section class="feature" >
+    <div class="feature__section">
   <div class="container">
     <div class="text-content">
     <div class="text__info">
@@ -16,7 +16,10 @@
       {% endfor %}
     </div>
     </div>
-    
+  </div>
+  <div class="text__image">
+  <img src={{ section.settings.image | image_url }} alt="follow-image" >
+  </div>
   </div>
 </section>
 {% schema %}
@@ -37,7 +40,7 @@
     },
       {
       "type": "image_picker",
-      "id": "background_image",
+      "id": "image",
       "label": "Background Image"
     }
   ],
@@ -77,10 +80,24 @@
 
 <style>
   .feature__section{
-    padding: 40px;
+    padding-top: 111px;
+    padding-bottom: 99px;
+    position: relative;
+    background-color: #F4EDE9;
+     z-index: 0;
+  }
+  .text__image{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 0;
+     bottom: 0;
   }
   .text-content{
     display:flex;
+  }
+  .text__info {
+    width:25%;
   }
   .text__info h2{
     font-family: Inter;
@@ -89,7 +106,7 @@
      line-height: 24px;
      letter-spacing: 2px;
      color:#202020;
-     padding-bottom:28px;
+    padding-bottom: 10px;
   }
   .text__info h3{
     font-family: IvyPresto Display;
@@ -99,42 +116,67 @@
     letter-spacing: 2px;
     color:#202020;
   }
-  .feature__section.text-content h3 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  .feature__section .icon-grid {
+   .icon-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    width:75%;
+    align-items: baseline;
+    padding-top: 16px;
   }
-  .feature__section.icon-item {
-    width: calc(25% - 20px);
-    max-width: 250px;
+  .icon-item {
+    width: 28%;
     text-align: center;
   }
   .feature__section .icon-item img {
     max-width: 50px;
     margin-bottom: 15px;
   }
-  .feature__section .icon-item h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+   .icon-item h4 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  padding-bottom:20px;
   }
-  .feature__section .icon-item p {
-    font-size: 14px;
-    color: #666;
+  .icon-item p {  
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 20px;
+   letter-spacing: 0px;
+   text-align: center;
+   vertical-align: middle;
+   color:#202020;
   }
-  @media (max-width: 768px) {
-    .feature__section .icon-item {
-      width: calc(50% - 20px);
+  @media screen and (max-width:1600px){
+    .text__image{
+      opacity:.5;
     }
   }
-  @media (max-width: 480px) {
-    .feature__section.icon-item {
-      width: 100%;
+  @media screen and (max-width:1024px){
+.text-content{
+     flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+.text__info{
+  width:100%;
+}
+.icon-grid{
+  width:100%;
+}
+.text__image{
+  display:none;
+}
+  }
+  @media screen and (max-width:767px){
+    .icon-grid{
+      flex-direction:column;
+      gap:38px;
+    }
+    .icon-item{
+      width:100%;
     }
   }
 </style>

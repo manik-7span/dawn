@@ -226,7 +226,67 @@
       "settings": {
         "heading": "Why Follow",
         "subheading": "Skin’s Rhythm?",
-        "background_image": "shopify://shop_images/testimonial.png"
+        "image": "shopify://shop_images/rhythem.png"
+      }
+    },
+    "rhythms_d9niYb": {
+      "type": "Rhythms",
+      "blocks": {
+        "card_twjR46": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_358.png",
+            "header": "Morning",
+            "title": "Rise",
+            "description": "Protecting and shielding the skin from environmental stressors that cause damage.",
+            "button_link": "shopify://products/plumpy-skin-serum-3",
+            "button-text": "SHOP RISE  →"
+          }
+        },
+        "card_LHnP4V": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_3.png",
+            "header": "Noon",
+            "title": "Shine",
+            "description": "Protecting and shielding the skin from environmental stressors that cause damage.",
+            "button_link": "shopify://products/plumpy-skin-serum-2",
+            "button-text": "SHOP SHINE →"
+          }
+        },
+        "card_7yqY9m": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_184.png",
+            "header": "Evening",
+            "title": "Chill",
+            "description": "Nourishing, restoring and preparing the skin for the overnight repair process.",
+            "button_link": "shopify://products/plumpy-skin-serum-1",
+            "button-text": "SHOP CHILL →"
+          }
+        },
+        "card_Q4HwwU": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_4.png",
+            "header": "Night",
+            "title": "Yawn",
+            "description": "Cell turnover and regeneration processes during the overnight recovery process..",
+            "button_link": "shopify://products/plumpy-skin-serum",
+            "button-text": "SHOP YAWN →"
+          }
+        }
+      },
+      "block_order": [
+        "card_twjR46",
+        "card_LHnP4V",
+        "card_7yqY9m",
+        "card_Q4HwwU"
+      ],
+      "name": "Rhythms Section",
+      "settings": {
+        "title": "Meet the Rhythms",
+        "description": "Explore our carefully crafted skincare routines designed to complement your skin's natural needs throughout the day."
       }
     },
     "head_with_button_qgDVtK": {
@@ -413,6 +473,7 @@
     "image_with_head_Pd6GtB",
     "image_with_text_WNtwdj",
     "feature_feedback_VKcEtY",
+    "rhythms_d9niYb",
     "head_with_button_qgDVtK",
     "featured_collection_34cmWQ",
     "text_image_VmtdzY",

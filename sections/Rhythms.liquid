@@ -1,0 +1,179 @@
+{% schema %}
+{
+  "name": "Rhythms Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Meet the Rhythms"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section Description",
+      "default": "Explore our carefully crafted skincare routines designed to complement your skin's natural needs throughout the day."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card Image"
+        },
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header",
+          "default": "Morning"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Rise"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Protecting and shielding the skin from environmental stressors that cause damage."
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "text",
+          "id": "button-text",
+          "label": "Button Text",
+          "default": "Shop Now"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rhythms Section",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+<section class="rhythms">
+<div class="rhythm__section">
+<div class="container">
+<div class="rhythm__info">
+  <h2>{{ section.settings.title }}</h2>
+  <p>{{ section.settings.description }}</p>
+  </div>
+  <div class="rhythms__cards">
+    {% for block in section.blocks %}
+      <div class="rhythm__product-card">
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.title }}">
+        {% endif %}
+        <div class="rhythm__product-card-header">{{ block.settings.header }}</div>
+        <div class="rhythm__product-card-body">
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.description }}</p>
+        </div>
+          <div class="rhythm__product-card-footer">
+            <a href="{{ block.settings.button_link }}" class="rhythm__footer-button">{{ block.settings.button-text }}</a>
+          </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+</section>
+<style>
+.rhythm__section{
+  text-align: center;
+  padding-top:102px;
+  padding-bottom: 110px;
+}
+.rhythm__info{
+  text-align: -webkit-center;
+}
+.rhythm__info h2{
+ font-family: IvyPresto Display;
+ font-weight: 400;
+ font-size: 40px;
+ line-height: 62px;
+ letter-spacing: 2px;
+ text-align: center;
+ color:#000000;
+ padding-bottom:10px;
+}
+.rhythm__info p{
+ font-family: Inter;
+ font-weight: 400;
+ font-size: 15px;
+ line-height: 24px;
+ letter-spacing: 1px;
+ text-align: center;
+ color:#202020;
+ padding-bottom:37px;
+ max-width:504px;
+}
+.rhythms__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.rhythm__product-card {
+  overflow: hidden;
+  text-align: center;
+   position: relative;
+}
+.rhythm__product-card-header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 127px;
+  font-size: 1rem;
+  position: absolute;
+  top: 57%;
+}
+.rhythm__product-card-body {
+  padding: 20px;
+}
+.rhythm__product-card-body h3 {
+font-weight: 700;
+font-size: 18px;
+line-height: 62px;
+letter-spacing: 2px;
+text-align: center;
+padding-bottom:15px;
+}
+.rhythm__product-card-body p {
+color:#202020;
+font-weight: 400;
+font-size: 13px;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+padding-bottom:30px;
+}
+.rhythm__product-card-footer {
+  padding: 10px;
+}
+.rhythm__footer-button {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #202020;
+  border:1px solid #333;
+  border-radius:50px;
+  padding:7px 21px;
+}
+.rhythm__product-card-footer .button:hover {
+  background-color: #444;
+}
+</style>
