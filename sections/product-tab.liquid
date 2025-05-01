@@ -1,0 +1,201 @@
+{{ 'product-tab.css' | asset_url | stylesheet_tag }}
+
+<section class="Shop by rhythms">
+<div class="container">
+<div class="tab__section">
+<div class="tab__section-heading">
+  <h2 class="tab__section-title">{{ section.settings.title }}</h2>
+  </div>
+  <!-- Rhythm Tabs -->
+  <div class="rhythm-tabs">
+    {% for block in section.blocks %}
+      {% if block.type == 'rhythm_tab' %}
+        <button class="rhythm-tab{% if forloop.first %} active{% endif %}" 
+                data-tab="{{ block.settings.tab_id }}">
+          {{ block.settings.tab_label }}
+        </button>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Tab Content -->
+  {% for block in section.blocks %}
+    {% if block.type == 'rhythm_tab' %}
+      <div class="rhythm-content{% if forloop.first %} active{% endif %}" 
+           id="content-{{ block.settings.tab_id }}">
+        
+        <div class="products-grid">
+          {% for product in block.settings.collection.products limit: block.settings.products_to_show %}
+            <div class="product-card">
+              <!-- Product Image -->
+              <a href="{{ product.url }}">
+                <img src="{{ product.featured_image | img_url: '400x' }}" 
+                     alt="{{ product.title }}" 
+                     class="product-image">
+              </a>
+              
+              <!-- Product Info -->
+              <h3 class="product-title">{{ product.title }}</h3>
+              
+              <div class="product-desc">
+                {{ product.description | strip_html | truncatewords: 20 }}
+              </div>
+              <div class="product__info">
+                <div class="product-weight">
+  <span>{{ product.variants.first.weight }} {{ product.variants.first.weight_unit }}</span>
+  </div>      
+              <div class="product-price">
+                {{ product.price | money }}
+              </div>
+              </div>
+              <!-- Add to Cart Button -->
+             {%- form 'product',
+                  product,
+                  id: product_form_id,
+                  class: 'form',
+                  novalidate: 'novalidate',
+                  data-type: 'add-to-cart-form'
+                -%}
+                  <input
+                    type="hidden"
+                    name="id"
+                    value="{{ product.selected_or_first_available_variant.id }}"
+                    class="product-variant-id"
+                    {% if product.selected_or_first_available_variant.available == false %}
+                      disabled
+                    {% endif %}
+                  >
+                  <button
+                    id="{{ product_form_id }}-submit"
+                    type="submit"
+                    name="add"
+                    class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
+                    aria-haspopup="dialog"
+                    aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+                    aria-live="polite"
+                    data-sold-out-message="true"
+                    {% if product.selected_or_first_available_variant.available == false %}
+                      disabled
+                    {% endif %}
+                  >
+                    <span class="product__tab-btn">
+                      {%- if product.selected_or_first_available_variant.available -%}
+                        Add to Bag +
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- endif -%}
+                    </span>
+                    <span class="sold-out-message hidden">
+                      {{ 'products.product.sold_out' | t }}
+                    </span>
+                    {%- if horizontal_quick_add -%}
+                      <span class="icon-wrap">
+                        {{- 'icon-plus.svg' | inline_asset_content -}}
+                      </span>
+                    {%- endif -%}
+                    {%- render 'loading-spinner' -%}
+                  </button>
+                {%- endform -%}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Shop by Rhythms",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Shop by Rhythms"
+    },
+    {
+      "type": "text",
+      "id": "section_name",
+      "label": "Section Name (for admin only)",
+      "default": "Rhythms Product Navigation"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "rhythm_tab",
+      "name": "Rhythm Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_id",
+          "label": "Tab ID",
+          "default": "tab1"
+        },
+        {
+          "type": "text",
+          "id": "tab_label",
+          "label": "Tab Label",
+          "default": "RISE"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "range",
+          "id": "products_to_show",
+          "min": 2,
+          "max": 8,
+          "step": 1,
+          "default": 4,
+          "label": "Products to show"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop by Rhythms",
+      "category": "Collection",
+      "settings": {
+        "title": "Shop by Rhythms"
+      },
+      "blocks": [
+        {
+          "type": "rhythm_tab",
+          "settings": {
+            "tab_id": "rise",
+            "tab_label": "RISE"
+          }
+        },
+        {
+          "type": "rhythm_tab",
+          "settings": {
+            "tab_id": "shine",
+            "tab_label": "SHINE"
+          }
+        },
+        {
+          "type": "rhythm_tab",
+          "settings": {
+            "tab_id": "chill",
+            "tab_label": "CHILL"
+          }
+        },
+        {
+          "type": "rhythm_tab",
+          "settings": {
+            "tab_id": "yawn",
+            "tab_label": "YAWN"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

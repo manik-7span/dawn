@@ -289,6 +289,58 @@
         "description": "Explore our carefully crafted skincare routines designed to complement your skin's natural needs throughout the day."
       }
     },
+    "product_tab_gd3EzM": {
+      "type": "product-tab",
+      "blocks": {
+        "rhythm_tab_4biBtp": {
+          "type": "rhythm_tab",
+          "settings": {
+            "tab_id": "rise",
+            "tab_label": "RISE",
+            "collection": "plumpy-skin-serum",
+            "products_to_show": 4
+          }
+        },
+        "rhythm_tab_JewTiY": {
+          "type": "rhythm_tab",
+          "settings": {
+            "tab_id": "shine",
+            "tab_label": "SHINE",
+            "collection": "plumpy-skin-serum-3",
+            "products_to_show": 4
+          }
+        },
+        "rhythm_tab_gAAzkB": {
+          "type": "rhythm_tab",
+          "settings": {
+            "tab_id": "chill",
+            "tab_label": "CHILL",
+            "collection": "mens-wear",
+            "products_to_show": 4
+          }
+        },
+        "rhythm_tab_VpxmMi": {
+          "type": "rhythm_tab",
+          "settings": {
+            "tab_id": "yawn",
+            "tab_label": "YAWN",
+            "collection": "kids-wear",
+            "products_to_show": 4
+          }
+        }
+      },
+      "block_order": [
+        "rhythm_tab_4biBtp",
+        "rhythm_tab_JewTiY",
+        "rhythm_tab_gAAzkB",
+        "rhythm_tab_VpxmMi"
+      ],
+      "name": "Shop by Rhythms",
+      "settings": {
+        "title": "Shop by Rhythms",
+        "section_name": "Rhythms Product Navigation"
+      }
+    },
     "head_with_button_qgDVtK": {
       "type": "head-with-button",
       "blocks": {
@@ -474,6 +526,7 @@
     "image_with_text_WNtwdj",
     "feature_feedback_VKcEtY",
     "rhythms_d9niYb",
+    "product_tab_gd3EzM",
     "head_with_button_qgDVtK",
     "featured_collection_34cmWQ",
     "text_image_VmtdzY",

@@ -133,12 +133,18 @@
    position: relative;
 }
 .rhythm__product-card-header {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 127px;
-  font-size: 1rem;
-  position: absolute;
-  top: 57%;
+     position: absolute;
+     left: 0;
+     width: 100%;
+     background-color: #202020;
+     color: #fff;
+     padding: 10px 0;
+     text-align: center;
+     top: 56%;
+     font-weight: 400;
+     font-size: 13px;
+     line-height: 20px;
+     letter-spacing: 2px;
 }
 .rhythm__product-card-body {
   padding: 20px;
@@ -175,5 +181,64 @@ padding-bottom:30px;
 }
 .rhythm__product-card-footer .button:hover {
   background-color: #444;
+}
+@media screen and (max-width:1044px){
+  .rhythm__product-card-header{
+    top:60%;
+  }
+}
+@media screen and (max-width:1024px){
+  .rhythms__cards{
+     grid-template-columns: repeat(2, 1fr);
+  }
+  .rhythm__product-card-header{
+    top:73%;
+  }
+  .rhythm__product-card-body p{
+   padding-bottom: 16px;
+  }
+}
+@media screen and (max-width:960px){
+  .rhythm__product-card-header{
+    top:70%;
+  }
+}
+@media screen and (max-width:820px){
+  .rhythm__product-card-header{
+    top:65%;
+  }
+}
+@media screen and (max-width:820px){
+  .rhythm__product-card-header{
+    top:65%;
+  }
+}
+@media screen and (max-width:650px){
+  .rhythm__product-card-header{
+    top:60%;
+  }
+}
+@media screen and (max-width:580px){
+  .rhythm__product-card-header{
+    top:55%;
+  }
+}
+@media screen and (max-width:480px){
+  .rhythm__product-card-header{
+    top:70%;
+  }
+  .rhythms__cards{
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width:420px){
+  .rhythm__product-card-header{
+    top:67%;
+  }
+}
+@media screen and (max-width:380px){
+  .rhythm__product-card-header {
+        top: 64%;
+    }
 }
 </style>

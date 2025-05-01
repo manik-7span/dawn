@@ -1,0 +1,119 @@
+
+    .tab__section{
+        padding-top:99px;
+        padding-bottom:109px;
+    }
+  
+  .tab__section-title {
+    font-family: IvyPresto Display;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 62px;
+    letter-spacing: 2px;
+    text-align: center;
+    color:#000000;
+    padding-bottom:23px;
+  }
+  
+  /* Tabs Styling */
+  .rhythm-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom:52px;
+  }
+  
+  .rhythm-tab {
+    padding: 8px 16px;
+    border: 1px solid #202020;
+    border-radius: 50px;
+    background: transparent;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    color:#202020;
+  }
+  
+  .rhythm-tab.active {
+    background: #f5f5f5;
+  }
+  
+  /* Tab Content */
+  .rhythm-content {
+    display: none;
+  }
+  
+  .rhythm-content.active {
+    display: block;
+  }
+  
+  /* Products Grid */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .product-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 62px;
+  letter-spacing: 1px;
+  color:#000000;
+  padding-top:13px;
+  padding-bottom:10px;
+  }
+  
+  .product-desc {
+   color:#202020;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+   letter-spacing: 0px;
+   padding-bottom:5px;
+  }
+  .product__info{
+    display:flex;
+    justify-content: space-between;
+    padding-top:5px;
+    padding-bottom:19px;
+    align-items:center;
+  }
+  .product-weight span {
+    border-radius: 50px;
+    border: .5px solid #202020;
+    padding: 1px 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .product-price {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 17px;
+   letter-spacing: 0px;
+   color:#202020;
+  }
+  
+  .product__tab-btn{
+    padding: 11px 66px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  
