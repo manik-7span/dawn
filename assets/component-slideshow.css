@@ -41,6 +41,12 @@ slideshow-component .slideshow.banner {
     max-width: 352px!important;
   }
 }
+@media screen and (max-width:420px){
+  .banner__heading{
+  line-height: 47px;
+  font-size: 30px;
+  }
+}
 @media screen and (max-width: 749px) {
   .slideshow--placeholder.banner--mobile-bottom.banner--adapt_image .slideshow__media,
   .slideshow--placeholder.banner--adapt_image:not(.banner--mobile-bottom) {

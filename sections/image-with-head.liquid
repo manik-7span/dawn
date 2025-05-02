@@ -1,33 +1,33 @@
 {{ 'image-with-head.css' | asset_url | stylesheet_tag }}
- <div class="background__image" style="background-image: url({{ section.settings.background_image | image_url }});">
-  <div class="container">
-  <div class="background__head">
-    <h2 class="heading">{{ section.settings.heading }}</h2>
+<div class="background__image" style="background-image: url({{ section.settings.background_image | image_url }});">
+        <div class="curved-overlay"></div>
+        <div class="container">
+            <div class="background__head">
+                <h2 class="heading">{{ section.settings.heading }}</h2>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-{% schema %}
-{
-  "name": "Background Heading",
-  "settings": [
+    {% schema %}
     {
-      "type": "image_picker",
-      "id": "background_image",
-      "label": "Background Image",
-      "info": "Upload the background image for the section."
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Your Heading Here"
+      "name": "Background Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "This is where Science meets nature"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Background Image",
+          "category": "Custom Content"
+        }
+      ]
     }
-  ],
-  "presets": [
-    {
-      "name": "Background Heading",
-      "category": "Custom Sections"
-    }
-  ]
-}
-{% endschema %}
+    {% endschema %}

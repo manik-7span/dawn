@@ -87,7 +87,7 @@
           "type": "icon",
           "settings": {
             "icon": "shopify://shop_images/Vector_2.svg",
-            "heading": "PETA APPROVED VEGAN",
+            "heading": "PETA APROVED VEGAN",
             "subheading": ""
           }
         },
@@ -135,20 +135,13 @@
       ],
       "settings": {}
     },
-    "image_with_head_Pd6GtB": {
-      "type": "image-with-head",
-      "settings": {
-        "background_image": "shopify://shop_images/Group_639.png",
-        "heading": "This is where <br> Science meets nature"
-      }
-    },
     "image_with_text_WNtwdj": {
       "type": "image-with-text",
       "blocks": {
         "heading_qKbp9M": {
           "type": "heading",
           "settings": {
-            "heading": "Skin's Rhytm",
+            "heading": "What is <span> Skin's Rhythm?<span>",
             "heading_size": "h1"
           }
         },
@@ -186,7 +179,7 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 88
       }
     },
     "feature_feedback_VKcEtY": {
@@ -409,6 +402,13 @@
         "heading": "Shop by Concern"
       }
     },
+    "image_with_head_Pd6GtB": {
+      "type": "image-with-head",
+      "settings": {
+        "background_image": "shopify://shop_images/Group_639.png",
+        "heading": "This is where <br> Science meets nature"
+      }
+    },
     "featured_collection_34cmWQ": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
@@ -434,8 +434,8 @@
         "quick_add": "standard",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 92,
+        "padding_bottom": 100
       }
     },
     "text_image_VmtdzY": {
@@ -522,12 +522,12 @@
   "order": [
     "slideshow_RXmiGR",
     "feature_section_QxFeQh",
-    "image_with_head_Pd6GtB",
     "image_with_text_WNtwdj",
     "feature_feedback_VKcEtY",
     "rhythms_d9niYb",
     "product_tab_gd3EzM",
     "head_with_button_qgDVtK",
+    "image_with_head_Pd6GtB",
     "featured_collection_34cmWQ",
     "text_image_VmtdzY",
     "text_image_G6FC4B"

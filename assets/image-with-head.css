@@ -1,19 +1,74 @@
-.background__image{
+.background__image {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
-.background__head{
+
+.background__head {
     padding-bottom: 50px;
 }
-.heading{
+
+.heading {
     padding-top: 119px;
     padding-bottom: 324px;
     text-align: left;
     display: flex;
     justify-content: right;
-    font-family: IvyPresto Display;
+    font-family: 'IvyPresto Display';
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 1px;
+}
+
+.curved-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    clip-path: ellipse(100% 100% at 0% 50%);
+}
+
+@media screen and (max-width: 1200px) {
+    .curved-overlay {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 32px;
+        line-height: 40px;
+        padding-top: 80px;
+        padding-bottom: 240px;
+    }
+    
+    .curved-overlay {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heading {
+        font-size: 28px;
+        line-height: 36px;
+        padding-top: 60px;
+        padding-bottom: 180px;
+        justify-content: center;
+    }
+    
+    .curved-overlay {
+        width: 100%;
+        clip-path: ellipse(150% 70% at 0% 50%);
+    }
+    
+    .background__head {
+        padding-bottom: 30px;
+    }
 }

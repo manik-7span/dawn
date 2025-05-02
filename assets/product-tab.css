@@ -103,7 +103,11 @@
     border-radius: 50px;
   }
   
-  /* Responsive */
+  @media screen and (max-width:1186px){
+    .product__tab-btn {
+      padding: 11px 48px;
+    }
+  }
   @media (max-width: 768px) {
     .products-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -114,6 +118,17 @@
     .products-grid {
       grid-template-columns: 1fr;
     }
+    .rhythm-tabs {
+     flex-direction: column; 
+     padding-bottom: 40px;
+    }
+    .product-card{
+      text-align: center;
+    }
   }
-
+  @media screen and (max-width:526px){
+    .product__tab-btn {
+      padding: 11px 37px;
+    }
+  }
   

@@ -52,4 +52,13 @@ text-align: center;
         padding-bottom: 84px;
     }
 }
+@media screen and (max-width:480px){
+    .concern-buttons{
+        flex-direction: column;
+    }
+    .shop-by-concern{
+        padding-top: 35px;
+        padding-bottom: 60px;
+    }
+}
     
